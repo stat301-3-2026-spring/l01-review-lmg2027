@@ -44,7 +44,12 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+1. 
+2. 
+3. 
+4.
+5.
+
 
 :::
 
@@ -55,7 +60,8 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning is task driven and refers to a problem where you predict a specific variable. In a supervised learning problem you have access to the target variable. Your data is in the form of a target variable y and prediction variables x. 
+In an unsupervised learning problem you don't do prediction at all. Unsupervised learning problems simply look for patterns within the data. 
 
 :::
 
@@ -189,7 +195,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-fold cross validation takes the training dataset and splits it into v-many folds and w-many repeats. Stratified sampling can also be used to ensure there is an even distribution of the target variable in each fold. When this is fit to models it uses 4 of the sections to create a model and the remaining section to calculate performance metrics (in this case, RMSE). After all 5 combinations are done it takes the average of the performance metrics and provides it as an estimate of the testing RMSE. We use v-fold cross validation to improve the accuracy of estimates and prevent overfitting. 
 
 :::
 

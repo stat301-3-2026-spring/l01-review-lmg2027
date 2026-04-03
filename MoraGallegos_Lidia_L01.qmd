@@ -44,12 +44,17 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-1. 
-2. 
-3. 
-4.
-5.
-
+1. EDA 
+2. Split the data
+3. feature engineering
+4. fold training data
+5. define recipe 
+6. set engine with tuning parameters
+7. create workflow
+8. tune
+9. compare models - select best 
+10. fit to full training data 
+11. evaluate model using actual 
 
 :::
 
@@ -74,7 +79,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models describe or illustrate the characteristics of a given dataset. 
 
 :::
 
@@ -83,7 +88,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models test a hypothesis. 
 
 :::
 
@@ -92,7 +97,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive models make the most accurate prediction possible for new data. 
 
 :::
 
@@ -118,7 +123,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are based on numbers. 
 
 :::
 
@@ -129,7 +134,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic is often associated with 
 
 :::
 
@@ -195,7 +200,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-V-fold cross validation takes the training dataset and splits it into v-many folds and w-many repeats. Stratified sampling can also be used to ensure there is an even distribution of the target variable in each fold. When this is fit to models it uses 4 of the sections to create a model and the remaining section to calculate performance metrics (in this case, RMSE). After all 5 combinations are done it takes the average of the performance metrics and provides it as an estimate of the testing RMSE. We use v-fold cross validation to improve the accuracy of estimates and prevent overfitting. 
+V-fold cross validation takes the training dataset and splits it into v-many folds and w-many repeats. Stratified sampling can also be used to ensure there is an even distribution of the target variable in each fold. When this is fit to models it uses 4 of the sections (acting as the training set) to fit to the model and the remaining section (acting as the testing set) to calculate performance metrics (in this case, RMSE). After all 5 combinations are done it takes the average of the performance metrics and provides it as an estimate of the testing RMSE. We use v-fold cross validation to improve the accuracy of estimates and prevent over fitting. 
 
 :::
 

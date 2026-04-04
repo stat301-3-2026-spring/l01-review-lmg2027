@@ -112,7 +112,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model is formula/theory driven.
 
 :::
 
@@ -123,7 +123,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Empirically driven models are based on numbers. 
+Empirically driven models are based on data.
 
 :::
 
@@ -134,7 +134,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Mechanistic is often associated with 
+Mechanistic is often associated with a parametric model as parametric models are those based on some sort of known form (like linear). Meanwhile, an empirically driven model is usually associated with a non-parametric model which is one that has no assumptions on the form. 
 
 :::
 
@@ -145,7 +145,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+In general, a mechanistic model is easier to interpret because it usually represents a causal situation based on a known form while an empirically driven model looks for trends within the data to make predictions which can be harder to explain. 
 
 :::
 
@@ -156,7 +156,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are more flexible than mechanistic models because they are not restricted to a known form/equation. Because they do not have to stick to this they are more flexible and typically have better predictive performance than mechanistic models.
 
 :::
 
@@ -167,7 +167,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model typically has higher bias but lower variance while an empirically driven model typically has lower bias and higher variance. 
 
 :::
 

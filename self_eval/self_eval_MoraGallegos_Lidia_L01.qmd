@@ -1,0 +1,531 @@
+---
+title: "Self Evaluation L01 Review"
+subtitle: "Data Science 3 with R (STAT 301-3)"
+author: "Lidia Mora Gallegos"
+pagetitle: "Self Evaluation L01 Lidia Mora Gallegos"
+date: today
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    embed-resources: true
+    code-fold: false
+    link-external-newwindow: true
+
+execute:
+  warning: false
+
+from: markdown+emoji
+reference-location: margin
+citation-location: margin   
+---
+
+::: {.callout-tip icon="false"}
+## Github Repo Link
+
+[Github Repo Link](https://github.com/stat301-3-2026-spring/l01-review-lmg2027)
+:::
+
+## Overview
+
+The goal of this lab is to review machine learning/predictive modeling vocabulary and concepts covered in Data Science 2 with R (STAT 301-2).
+
+## Questions
+
+When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
+
+### Question 1
+
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+1. EDA 
+2. Split the data
+3. feature engineering
+4. fold training data
+5. define recipe 
+6. set engine with tuning parameters
+7. create workflow
+8. tune
+9. compare models - select best 
+10. fit to full training data 
+11. evaluate model using actual 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+There was a misunderstanding on where the feature engineering step goes. I placed it prior to the resampling technique when it actually goes after. The other steps are correct, thus I give 4 points. 
+
+:::
+
+### Question 2
+
+Explain the difference between supervised and unsupervised learning.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Supervised learning is task driven and refers to a problem where you predict a specific variable. In a supervised learning problem you have access to the target variable. Your data is in the form of a target variable y and prediction variables x. 
+In an unsupervised learning problem you don't do prediction at all. Unsupervised learning problems simply look for patterns within the data. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Solution was sufficient to answer the question. 
+
+:::
+
+### Question 3 
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+#### Descriptive Models 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Descriptive models describe or illustrate the characteristics of a given dataset. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+Good response to the question.
+
+:::
+
+#### Inferential Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Inferential models test a hypothesis. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Response sufficiently answers the question.
+
+:::
+
+#### Predictive Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Predictive models make the most accurate prediction possible for new data. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Great answer! 
+
+:::
+
+### Question 4 
+
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
+
+#### Part (a)
+
+What does it mean to be a mechanistic model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A mechanistic model is formula/theory driven.
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Sufficient answer, could be more detailed. 
+
+:::
+
+#### Part (b)
+
+What does it mean to be an empirically driven model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Empirically driven models are based on data.
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Sufficient answer, again could be more detailed. 
+
+:::
+
+#### Part (c)
+
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic is often associated with a parametric model as parametric models are those based on some sort of known form (like linear). Meanwhile, an empirically driven model is usually associated with a non-parametric model which is one that has no assumptions on the form. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good detailed response. 
+
+:::
+
+#### Part (d)
+
+In general, is a mechanistic or empirically driven model easier to interpret? Explain.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+In general, a mechanistic model is easier to interpret because it usually represents a causal situation based on a known form while an empirically driven model looks for trends within the data to make predictions which can be harder to explain. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+Good answer. 
+
+:::
+
+#### Part (e)
+
+How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Empirically driven models are more flexible than mechanistic models because they are not restricted to a known form/equation. Because they do not have to stick to this they are more flexible and typically have better predictive performance than mechanistic models.
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Great answer
+
+:::
+
+#### Part (f)
+
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A mechanistic model typically has higher bias but lower variance while an empirically driven model typically has lower bias and higher variance. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good response. 
+
+:::
+
+### Question 5 
+
+Explain the difference between a regression and classification machine learning (ML) problems.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A regression machine learning problem predicts a numeric variable. A classification machine learning problem predicts a categorical variable. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good answer!
+
+:::
+
+### Question 6 
+
+When splitting the data, why is it useful to stratify by the outcome/target variable? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+When splitting the data it is useful to stratify by the outcome/target variable to ensure that there is an even distribution of this variable in the testing and training data. This prevents over/under-representation that could be caused by random sampling without stratification. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Sufficient answer. 
+
+:::
+
+### Question 7 
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+V-fold cross validation takes the training dataset and splits it into v-many folds and w-many repeats. Stratified sampling can also be used to ensure there is an even distribution of the target variable in each fold. When this is fit to models it uses 4 of the sections (acting as the training set) to fit to the model and the remaining section (acting as the testing set) to calculate performance metrics (in this case, RMSE). After all 5 combinations are done it takes the average of the performance metrics and provides it as an estimate of the testing RMSE. We use v-fold cross validation to improve the accuracy of estimates and prevent over fitting. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good description of v-fold cross validation. 
+
+:::
+
+### Question 8
+
+When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+We might use a bootstrap resampling procedure instead of v-fold cross validation when the dataset is small. Bootstrap resampling uses replacement instead of splitting the data into subsets like v-fold does. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good use case of bootstrap resampling. 
+
+:::
+
+### Question 9 
+
+Briefly describe model tuning and why we use it.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Model tuning helps us find the set of best hyperparameters for the intended model. Using default parameters is not sufficient during model creation. Model tuning involves seting the engine with tuning parameters, the ranges of which are later stored and used to define the grid that will later be tuned using the intended model. 
+
+:::
+
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good explanation of model tuning! 
+
+:::
+
+### Question 10 
+
+What are two common performance metrics when dealing with a regression ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Two common performance metrics when dealing with a regression ML problem are root mean squared error (RMSE) and mean absolute error (MAE). RMSE more heavily penalizes large errors than MAE. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Two good examples. 
+
+:::
+
+What are two common performance metrics when dealing with a classification ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Two common performance metrics when dealing with a classification ML problem are ROC AUC and a confusion matrix. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good performance metrics for classification problems. 
+
+:::
+
+### Question 11
+
+Classify each question/problem below as either prediction or inferential. Explain your reasoning for each.
+
+A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with a them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
+
+1. Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Inferential. The possible answers for this question are "yes" and "no". This asks us to determine the impact a high number of service calls has on a customer's choice to leave the company. The two possibilities are: 
+1. Yes, a high number of service calls impacts a customer's likelihood of churn in the next month. 
+2. No, a high number of service calls does not impact a customer's likelihood of churn in the next month. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Good explanation! 
+
+:::
+
+2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Prediction. This question asks us to predict the numeric likelihood of a customer leaving in the next month. In this case, the answer will be a number. For example, there is a 70& likelihood that customer XYZ will leave the service. 
+
+:::
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Great explanation of why this is a prediction problem. 
+
+:::
